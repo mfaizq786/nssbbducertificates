@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSS BBDU Certificate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/nss-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo-bbd"><img src="./images/bbd-logo.png" alt="bbd-logo" height="100%" width="100%"></div>
+            <div class="nss-name"> <marquee behavior="alternate" scrollamount="10"> National Service Scheme</marquee></div>
+            <div class="logo-nss"><img src="./images/nss-logo.png" alt="nss-logo" height="85%" width="85%"></div>
+        </div>
+
+        <div class="slider">
+        </div>
+
+        <div class="about-nss">
+            <h2>About National Service Scheme (NSS)</h2>
+            <p>
+                The National Service Scheme (NSS) is a prominent youth-centric initiative in India that plays a vital role in fostering community service and social development. Established in 1969, NSS operates under the Ministry of Youth Affairs and Sports and encompasses millions of students across the country. Its primary objective is to engage young people in meaningful volunteer work that addresses societal needs and challenges.
+
+                NSS volunteers participate in a wide range of activities, including environmental conservation, health camps, literacy campaigns, and disaster relief efforts. These endeavors not only contribute to the betterment of society but also provide students with practical exposure to real-world issues. 
+            </p>
+            <p>   
+                Through NSS, young participants develop a heightened sense of social responsibility, empathy, and leadership skills. They learn the value of giving back to their communities and gain a deeper understanding of the challenges faced by marginalized sections of society.
+
+                Furthermore, NSS fosters a spirit of national integration and unity by bringing together students from diverse backgrounds and cultures. It transcends boundaries and emphasizes the importance of working collectively for the greater good. The program instills a sense of pride and purpose in the hearts of the youth, making them valuable contributors to the nation's progress. Overall, the National Service Scheme continues to be a crucial platform for nurturing responsible, compassionate, and socially conscious citizens in India.
+            </p>
+        </div>
+
+        <section class="certification">
+            <div class="heading"> Get your certificates </div>
+            <div class="certificate">
+            <!-- blood Donation Card -->
+            <div class="cards" id="card1">
+                <h2>Blood Donation</h2>
+                <p>Blood donation camps are a lifeline for patients in need. Donated blood is vital for surgeries, trauma care, and medical treatments. It's a simple yet powerful way to save lives. By participating, you contribute to the health and well-being of your community. Your donation can make all the difference in critical situations, emphasizing the significance of these camps.</p>
+                
+                <div class="input-name">
+                    <input type="text" name="" id="name-b" placeholder="Enter your name" autocomplete="false" required> 
+                </div>
+                <div class="btn">
+                    <button type="submit" id="submit-b">Generate</button>
+                </div>
+                
+            </div>
+
+            <!-- Poster Making Card-->
+            <div class="cards">
+                <h2>Poster Making Competition</h2>
+                <p>Poster making competitions foster creativity and expression. They provide a platform for individuals to convey important messages, raise awareness, and spark conversations on various topics. These events encourage artistic talents and critical thinking while addressing social issues, making them a valuable tool for education and advocacy.</p>
+                
+                <div class="input-name">
+                    <input type="text" name="" id="name-p" placeholder="Enter your name" autocomplete="false" required> 
+                </div>
+                <div class="btn">
+                    <button type="submit" id="submit-p">Generate</button>
+                </div>
+            </div>
+
+            <!-- Fine Arts Card -->
+            <div class="cards">
+                <h2>Speech Competition</h2>
+                <p>Speech competitions hold immense importance as they nurture vital skills like public speaking, critical thinking, and persuasion. They empower individuals to articulate ideas, advocate for change, and inspire others. These competitions encourage self-expression and contribute to personal growth, enhancing one's confidence and communication abilities.</p>
+                
+                <div class="input-name">
+                    <input type="text" name="" id="name-s" placeholder="Enter your name" autocomplete="false" required> 
+                </div>
+                <div class="btn">
+                    <button type="submit" id="submit-s">Generate</button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        
+
+        <footer>
+            <h3>Developed By: Mohd Faiz Qureshi and Abhishek Kumar Pandey </h3>
+            <h4>NSS: Technical Team Members</h4>   
+            <h4>For any query, contact us: 8577001721 or 8299507908</h4> 
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

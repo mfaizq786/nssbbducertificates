@@ -1,0 +1,276 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark-color:rgb(5, 5, 100);
+}
+.container{
+    width:100%;
+    min-height:100vh;
+    border:none;
+}
+
+.container .navbar{
+    height:80px;
+    width: 100%;
+    border:none;
+    display: flex;
+}
+.container .navbar .logo-bbd{
+    width: 20%;
+    height:100%;
+}
+.container .navbar .nss-name{
+    width: 72%;
+    height:100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:50px;
+    color:var(--dark-color);
+}
+.container .navbar .logo-nss{
+    width: 8%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+}
+
+/* Slider CSS */
+.container .slider{
+    height:80vh;
+    width: 99%;
+    margin: 5px auto;
+    border:none;
+    box-shadow: 0px 0px 3px 2px grey;
+    background-image: url('./images/Picture.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: slides;
+    animation-duration: 60s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+    
+@keyframes slides {
+    0%{
+        background-image: url('./images/Picture.jpg');
+    }
+    10%{
+        background-image: url('./images/Picture1.jpg');
+    }
+    20%{
+        background-image: url('./images/Picture2.jpg');
+    }
+    30%{
+        background-image: url('./images/Picture3.jpg');
+    }
+    40%{
+        background-image: url('./images/Picture4.jpg');
+    }
+    50%{
+        background-image: url('./images/Picture5.jpg');
+    }
+    60%{
+        background-image: url('./images/Picture6.jpg');
+    }
+    70%{
+        background-image: url('./images/Picture.jpg');
+    }
+    80%{
+        background-image: url('./images/Picture1.jpg')
+    }
+    90%{
+        background-image: url('/images/Picture2.jpg');
+    }
+    100%{
+        background-image: url('/images/Picture3.jpg');        
+    }
+}
+
+.container .about-nss{
+    padding: 40px ;
+    background: #efefef;
+}
+
+.container .about-nss h2{
+    text-align: center;
+    font-size: 2em;
+    color:var(--dark-color);
+    padding-bottom: 20px;
+}
+
+.container .about-nss p{
+    text-align: justify;
+    font: 1.5em;
+    margin: 20px 0px;
+}
+
+.container .certification .heading{
+    text-align: center;
+    font-size: 2em;
+    color: var(--dark-color);
+    padding: 20px 0px;
+}
+
+.container .certification .certificate{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.container .certificate .cards{
+    min-height: 60vh;
+    width:20%;
+    border: none;
+    margin: 0px 50px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 2px grey;
+}
+
+
+
+.cards h2{
+    text-align: center;
+    padding: 15px 0px;
+    color:red;
+    /* font-family: sans-serif; */
+    font-family: 'Dancing Script', cursive;
+
+}
+.cards p{
+    text-align: justify;
+    padding: 10px 10px;
+    font-size: 1em;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+.cards .input-name{
+    width: 95%;
+    height: 40px;
+    border: none;
+    margin: 0px auto ;   
+}
+.cards .input-name input[type="text"]{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    font-size: 1em;
+    text-align: center;
+    font-weight:700;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    background: transparent;
+}
+
+.cards .btn{
+    width: 95%; 
+    border: none;
+    outline: none;
+    margin: 0px auto;
+}
+
+.cards button{
+    width: 100%;
+    background: rgb(155, 0, 0);
+    color:white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 2px rgb(165, 165, 179);
+    border: none;
+    transition: .5s;
+
+    
+}
+.cards button:hover{
+    background-color: rgba(187, 8, 8, 0.799);
+    box-shadow: 2px 3px 5px 2px rgb(128, 124, 124);
+
+}
+
+footer{
+    min-height: 80px;
+    width: 100%;
+    border:1px solid black;
+    background: var(--dark-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'DM Sans', sans-serif; */
+    font-weight: lighter;
+}
+footer h3, footer h4, footer h5{
+    margin: 8px 0px;
+}
+/* footer h2{
+    margin-top:10px;
+}
+footer h3,footer h4{
+    margin-top:10px;
+    margin-bottom:10px;
+} */
+
+/* Responsiveness */
+
+@media (max-width:500px) {
+    .container .navbar{
+        height: 40px;
+    }
+    .container .navbar .nss-name{
+        font-size: 20px;
+    }
+    .container .slider{
+        height: 60vh;
+    }
+
+    .container .about-nss h2{
+        font-size: 1.5em;
+    }
+
+    footer h3{
+        font-size:12px;
+        text-align: center;
+    }
+
+    footer h4{
+        font-size:10px;
+    }
+}
+
+@media (max-width:1000px){
+    .container .certification .certificate{
+        flex-direction: column;
+        
+    }
+
+    .container  .certification .certificate .cards{
+        width: 80%;
+        min-height: 30vh;
+        margin-bottom: 50px;
+    }
+} 
+
+@media (min-width:500px) and (max-width:800px){
+    .container .navbar .nss-name{
+        font-size: 30px;
+    }
+}
