@@ -113,10 +113,10 @@
         background-image: url('./images/Picture1.jpg');
     }
     90%{
-        background-image: url('/images/Picture2.jpg');
+        background-image: url('./images/Picture2.jpg');
     }
     100%{
-        background-image: url('/images/Picture3.jpg');        
+        background-image: url('./images/Picture3.jpg');        
     }
 }
 
