@@ -21,6 +21,7 @@
 .container .navbar .logo-bbd{
     width: 20%;
     height:100%;
+    z-index: 10;
 }
 .container .navbar .nss-name{
     width: 72%;
@@ -31,6 +32,29 @@
     align-items: center;
     font-size:50px;
     color:var(--dark-color);
+    animation: scroll 30s linear infinite; 
+    
+}
+
+@keyframes scroll {
+    0% {
+        color:var(--dark-color);
+    }
+    20% {
+        color:red;
+    }
+    40%{
+        color: orangered;
+    }
+    60%{
+        color:green;
+    }
+    80%{
+        color:purple;
+    }
+    100%{
+        color:yellow;
+    }
 }
 .container .navbar .logo-nss{
     width: 8%;
@@ -39,6 +63,7 @@
     justify-content: center;
     align-items: center;
     border:none;
+    z-index: 10;
 }
 
 /* Slider CSS */
@@ -239,7 +264,7 @@ footer h3,footer h4{
         font-size: 20px;
     }
     .container .slider{
-        height: 60vh;
+        height: 40vh;
     }
 
     .container .about-nss h2{
@@ -269,7 +294,7 @@ footer h3,footer h4{
     }
 } 
 
-@media (min-width:500px) and (max-width:800px){
+@media (min-width:500px) and (max-width:980px){
     .container .navbar .nss-name{
         font-size: 30px;
     }

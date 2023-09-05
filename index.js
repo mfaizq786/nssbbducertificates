@@ -109,7 +109,8 @@ var poster =["9142264877",
 "8318968233",
 "7380358207",
 "7781890843",
-"6386134620"
+"6386134620",
+"6397063216"
 ];
 
 var posterName = [
@@ -134,7 +135,9 @@ var posterName = [
   "Ali Ahmad",
   "Shadab Ansari",
   "Md Danish",
-  "Mohd Faiz Qureshi"  
+  "Mohd Faiz Qureshi",
+  "Vidyank Verma",
+    
 ];
 
 // Speech name and Number
