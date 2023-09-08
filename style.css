@@ -88,35 +88,77 @@
     0%{
         background-image: url('./images/Picture.jpg');
     }
-    10%{
+    4%{
         background-image: url('./images/Picture1.jpg');
     }
-    20%{
+    8%{
         background-image: url('./images/Picture2.jpg');
     }
-    30%{
+    13%{
         background-image: url('./images/Picture3.jpg');
     }
-    40%{
+    18%{
         background-image: url('./images/Picture4.jpg');
     }
-    50%{
+    23%{
         background-image: url('./images/Picture5.jpg');
     }
-    60%{
+    28%{
         background-image: url('./images/Picture6.jpg');
     }
-    70%{
-        background-image: url('./images/Picture.jpg');
+    33%{
+        background-image: url('./images/Picture7.jpg');
     }
-    80%{
-        background-image: url('./images/Picture1.jpg');
+    38%{
+        background-image: url('./images/Picture8.jpg');
+    }
+    43%{
+        background-image: url('./images/Picture9.jpg');
+    }
+    47%{
+        background-image: url('./images/Picture10.jpg');        
+    }
+    52%{
+        background-image: url('./images/Picture11.jpg');        
+    }
+    57%{
+        background-image: url('./images/Picture12.jpg');        
+    }
+    62%{
+        background-image: url('./images/Picture13.jpg');        
+    }
+    67%{
+        background-image: url('./images/Picture14.jpg');        
+    }
+    72%{
+        background-image: url('./images/Picture15.jpg');        
+    }
+    75%{
+        background-image: url('./images/Picture16.jpg');        
+    }
+    79%{
+        background-image: url('./images/Picture17.jpg');        
+    }
+    81%{
+        background-image: url('./images/Picture18.jpg');        
+    }
+    84%{
+        background-image: url('./images/Picture19.jpg');        
+    }
+    88%{
+        background-image: url('./images/Picture20.jpg');        
     }
     90%{
-        background-image: url('./images/Picture2.jpg');
+        background-image: url('./images/Picture21.jpg');        
+    }
+    93%{
+        background-image: url('./images/Picture22.jpg');        
+    }
+    98%{
+        background-image: url('./images/Picture23.jpg');        
     }
     100%{
-        background-image: url('./images/Picture3.jpg');        
+        background-image: url('./images/Picture24.jpg');        
     }
 }
 

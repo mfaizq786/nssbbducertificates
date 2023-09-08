@@ -77,7 +77,7 @@ var bloodName = [
 "Pallavi Raturi",
 "Abhishek Kumar pandey",
 "Mohd Faiz Qureshi",
-"Ali ahmed",
+"Ali Ahmed",
 "Aditya Raj",
 "Ayush Kathri",
 "Shubham Tripathi",
@@ -114,7 +114,8 @@ var poster = [
 "8318968233",
 "7380358207",
 "6386134620",
-"9336709002"
+"9336709002",
+"8874962113"
 ]
 
 var posterName =[
@@ -139,7 +140,8 @@ var posterName =[
 "Ali Ahmad",
 "Shadab Ansari",
 "Mohd Faiz Qureshi",
-"Mariyam Fatima Rizvi" 
+"Mariyam Fatima Rizvi",
+"Yazdaan Butool" 
 ];
 
 // Speech name and Number
@@ -168,7 +170,8 @@ var speech= [
 "7781890843",
 "6386134620",
 "7905690450",
-"9336709002"
+"9336709002",
+"8874962113"
 ];
 
 var speechName = [
@@ -195,7 +198,8 @@ var speechName = [
 "Md Danish",
 "Mohd Faiz Qureshi",
 "Ananya Verma",
-"Mariyam Fatima Rizvi"
+"Mariyam Fatima Rizvi",
+"Yazdaan Butool"
 ];
 
 //function for blood
