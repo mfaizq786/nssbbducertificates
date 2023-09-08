@@ -40,7 +40,8 @@ var blood = [
 "8318968233",
 "7380358207",
 "7781890843",
-"6386134620"
+"6386134620",
+"9336709002"
 ];
 
 var bloodName = [
@@ -75,7 +76,7 @@ var bloodName = [
 "Shruti Shukla",
 "Pallavi Raturi",
 "Abhishek Kumar pandey",
-"MOHD FAIZ QURESHI",
+"Mohd Faiz Qureshi",
 "Ali ahmed",
 "Aditya Raj",
 "Ayush Kathri",
@@ -84,60 +85,61 @@ var bloodName = [
 "Ali Ahmad",
 "Shadab Ansari",
 "Md Danish",
-"Mohd Faiz Qureshi"  
+"Mohd Faiz Qureshi",
+"Mariyam Fatima Rizvi"  
 ];
 
 // poster Numbers and names
-var poster =["9142264877",
-"9555288026",
-"7651978103",
-"8057886511",
-"8429351328",
-"7620720947",
-"9120805567",
-"9140853269",
+
+
+var poster = [
+"6397063216",
 "9120953242",
 "8931980269",
+"9140853269",
+"6306538382",
+"7781890843",
 "7267906352",
-"8528728766",
-"8726398174",
-"7275170307",
+"7620720947",
 "9648367868",
-"7754851222",
+"7275170307",
+"6397063216",
+"8726398174",
+"7651978103",
+"8057886511",
+"8528728766",
+"8532998088",
 "8368899572",
 "9517229493",
 "8318968233",
 "7380358207",
-"7781890843",
 "6386134620",
-"6397063216"
-];
+"9336709002"
+]
 
-var posterName = [
-  "Sinu kumari",
-  "Khushboo singh", 
-  "Sumi Gaur",
-  "Tanu Tiwari",
-  "Priyanka Sharma", 
-  "NIKITA SINGH",
-  "Nuzhat",
-  "Arpita Singh", 
-  "Aditi Singh", 
-  "Anu Kushwaha", 
-  "Nandini Singh", 
-  "Vaishnavi Agarwal", 
-  "Shivani yadav",
-  "Priya singh", 
-  "Pratibha Umrao", 
-  "MANSHA SAHU",
-  "Shubham Tripathi",
-  "Mohd Adnan",
-  "Ali Ahmad",
-  "Shadab Ansari",
-  "Md Danish",
-  "Mohd Faiz Qureshi",
-  "Vidyank Verma",
-    
+var posterName =[
+"Vidyank Verma",
+"Aditi Singh", 
+"Anu Kushwaha", 
+"Arpita Singh", 
+"Deepshika singh",
+"Md Danish", 
+"Nandini Singh", 
+"NIKITA SINGH",
+"Pratibha Umrao", 
+"Priya Singh", 
+"Sanjana Singh",
+"Shivani Yadav",
+"Sumi Gaur",
+"Tanu Tiwari",
+"Vaishnavi Agarwal", 
+"Yahika singh tomar",
+"Shubham Tripathi",
+"Mohd Adnan",
+"Ali Ahmad",
+"Shadab Ansari",
+"Mohd Faiz Qureshi",
+"Mariyam Fatima Rizvi" 
 ];
 
 // Speech name and Number
@@ -145,12 +147,12 @@ var posterName = [
 var speech= [
 "9101824025",
 "9415175584",
-"7973882236",
+"8601028300",
 "7458048119",
 "9508863897",
 "8103139145",
 "9651425978",
-"6391511377",
+"6397063216",
 "9793048868",
 "8604449052",
 "9115247511",
@@ -164,18 +166,20 @@ var speech= [
 "8318968233",
 "7380358207",
 "7781890843",
-"6386134620"
+"6386134620",
+"7905690450",
+"9336709002"
 ];
 
 var speechName = [
 "Rishav Mishra", 
 "Shivansh Chandra",
-"Rohan Verma",
-"Ayush pathak",
-"Sonali kumari", 
+"Om Hari Singh yadav",
+"Ayush Pathak",
+"Sonali Kumari", 
 "Khushi Singh", 
 "Ananya Singhal",
-"Eshika Singh Chauhan", 
+"Krishna Singh", 
 "Deeksha Bhadauria", 
 "Mohd Farhan", 
 "Shikhar Upadhyay", 
@@ -189,7 +193,9 @@ var speechName = [
 "Ali Ahmad",
 "Shadab Ansari",
 "Md Danish",
-"Mohd Faiz Qureshi"  
+"Mohd Faiz Qureshi",
+"Ananya Verma",
+"Mariyam Fatima Rizvi"
 ];
 
 //function for blood
