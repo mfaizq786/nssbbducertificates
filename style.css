@@ -78,8 +78,8 @@
     background-repeat: no-repeat;
     background-position: center;
     animation-name: slides;
-    animation-duration: 60s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 40s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: normal;
 }
@@ -133,10 +133,10 @@
     72%{
         background-image: url('./images/Picture15.jpg');        
     }
-    75%{
+    74%{
         background-image: url('./images/Picture16.jpg');        
     }
-    79%{
+    78%{
         background-image: url('./images/Picture17.jpg');        
     }
     81%{
@@ -145,7 +145,7 @@
     84%{
         background-image: url('./images/Picture19.jpg');        
     }
-    88%{
+    87%{
         background-image: url('./images/Picture20.jpg');        
     }
     90%{
