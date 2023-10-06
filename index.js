@@ -46,7 +46,7 @@ var blood = [
 
 var bloodName = [
 "Rudraksh Rai",
-"Khushi mahroj",
+"Khushi Mehrotra",
 "Yasmeen",
 "Prakhar Verma",
 "Aryan Verma",
@@ -115,7 +115,9 @@ var poster = [
 "7380358207",
 "6386134620",
 "9336709002",
-"8874962113"
+"8874962113",
+"9555288026",
+"9142264877"
 ]
 
 var posterName =[
@@ -141,7 +143,9 @@ var posterName =[
 "Shadab Ansari",
 "Mohd Faiz Qureshi",
 "Mariyam Fatima Rizvi",
-"Yazdaan Butool" 
+"Yazdaan Butool",
+"Khushboo Singh",
+"Sinu Kumari" 
 ];
 
 // Speech name and Number
