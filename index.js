@@ -299,7 +299,7 @@ submit_btn_p.addEventListener("click",()=>{
     let key = prompt("Enter Your Phone No: ");
     let isValid = false;   
     for(let i=0; i<poster.length; i++){
-      if(poster[i] == key){
+      if(poster[i] == key && posterName[i].toLowerCase() == val.toLowerCase()){
         isValid = true;
         break;
       }        
@@ -380,7 +380,7 @@ submit_btn_s.addEventListener("click",()=>{
   let roll = prompt("Enter Your Phone No: ");
     let isValid = false;   
     for(let i=0; i<speech.length; i++){
-      if(speech[i] == roll){
+      if(speech[i] == roll && speechName[i].toLowerCase() == val.toLowerCase()){
         isValid = true;
         break;
       }        
