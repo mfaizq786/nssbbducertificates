@@ -278,6 +278,7 @@ const inputValBlood = document.querySelector("#name-b");
 const submit_btn_b = document.querySelector("#submit-b");
 submit_btn_b.addEventListener("click",()=>{
     let val = inputValBlood.value;
+    // val = val.trim();
     let roll = prompt("Enter Your Phone No: ");
     
     let isValid = false;   
@@ -525,7 +526,7 @@ saveAs(file);
 const submit_btn_dp = document.querySelector("#submit-dp");
 const inputValDigitalPoster = document.querySelector("#name-dp");
 submit_btn_dp.addEventListener("click",()=>{
-  let val = inputValDigitalPoster.value;
+  let val = inputValDigitalPoster.value.trim();
   let indexNum = prompt("Enter Your Index Num: ");
     let isValid = false;   
     for(let i=0; i<digitalPoster.length; i++){
