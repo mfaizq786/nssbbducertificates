@@ -208,6 +208,69 @@ var speechName = [
 
 // Digital Poster Making
 
+digitalPoster = [
+"2647AK",
+"9987AS",
+"3592DG",
+"5942YS",
+"4325AS",
+"8509AP",
+"4748AV",
+"9354AK",
+"7103AK",
+"4763AS",
+"9633GM",
+"3003KS",
+"9809RM",
+"4840AS",
+"2927AS",
+"5810SS",
+"4026AK",
+"9945RS",
+"6375RU",
+"4402UG",
+"4059AS",
+"7820JK",
+"1558LG",
+"4852HG",
+"5691DS",
+"1462SM",
+"4825KS",
+"4854AC",
+"7717ST"
+];
+
+digitalPosterName = [
+  "Abhishek Kumar Yadav",
+  "Adhiraj Singh",
+  "Dheeraj Gupta",
+  "Yash Chawla",
+  "Adarsh Shukla", 
+  "Ankit Pandey",
+  "Arpit Verma", 
+  "Aman Kr.Singh",
+  "Ayush kr.Gupta",
+  "Anshuman Singh", 
+  "Garvit Mittal",
+  "Krish Gupta",
+  "Rishabh Maddy", 
+  "Adarsh Srivastava", 
+  "Akshat Srivastava", 
+  "Sawan Singh",
+  "Aditya kr. Srivastava", 
+  "Rohan Singh", 
+  "Rishav Upadhyay", 
+  "Vijay Raj Gupta", 
+  "Akarsh Srivastava", 
+  "Jitendra Kumar Verma",
+  "Lalit Gangwar",
+  "Himanshu Gupta",
+  "Disha Singh", 
+  "Shruti Mishra", 
+  "Kirtika Singh",
+  "Anshuman Chaturvedi", 
+  "Sidhant Tiwari"
+];
 
 
 //function for blood
@@ -475,7 +538,7 @@ submit_btn_dp.addEventListener("click",()=>{
       alert("You are not a valid person..");
     }else{
       generatePDFDigitalPoster(val);
-      alert(val+" , your speech competition certificate is generated successfully...");
+      alert(val+" , your digital making competition certificate is generated successfully...");
     }
 });
 
