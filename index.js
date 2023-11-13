@@ -546,7 +546,7 @@ const generatePDFDigitalPoster = async (name) =>{
   const {PDFDocument, StandardFonts, rgb} = PDFLib;
   name = name.toUpperCase();
 
-  const exBytes = await fetch("./Speech_comp.pdf").then((res) =>{
+  const exBytes = await fetch("./digital_poster.pdf").then((res) =>{
       return res.arrayBuffer();
   });
 
@@ -563,13 +563,13 @@ const generatePDFDigitalPoster = async (name) =>{
   // xPos ---> line se pahle ki 
   // line ki width 19 charachters
   // 1 character --- 15px 
-  let xPos = 170;
+  let xPos = 0;
   let nameLenth = name.length;
-  let offset = (490 - nameLenth*15)/2;
+  let offset = (490 - nameLenth*12)/2;
   firstPage.drawText(name, {
-  x: xPos + offset,
-  y: 240,
-  size:25,
+  x: xPos + offset + 5,
+  y: 280,
+  size:22,
   // color: rgb(0, 0.53, 0.71),
   // color: rgb(0, 0, 0),
   font:timesRomanFont,
@@ -588,8 +588,8 @@ console.log("Done creating");
 
 // this was for creating uri and showing in iframe
 
-// const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
-// document.getElementById("pdf").src = pdfDataUri;
+const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
+document.getElementById("pdf").src = pdfDataUri;
 
 var file = new File(
   [pdfBytes],
@@ -598,10 +598,10 @@ var file = new File(
     type: "application/pdf;charset=utf-8",
   }
 );
-saveAs(file);
+// saveAs(file);
 };
 
-
+generatePDFDigitalPoster("Jitendra Kumar Verma");
 // generatePDF("Shashwat Shrivastav");
 // generatePDF("Mariyam Fatima Rizvi");
 // generatePDF("Abhishek kumar pandey");
