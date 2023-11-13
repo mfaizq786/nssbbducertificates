@@ -588,8 +588,8 @@ console.log("Done creating");
 
 // this was for creating uri and showing in iframe
 
-const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
-document.getElementById("pdf").src = pdfDataUri;
+// const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
+// document.getElementById("pdf").src = pdfDataUri;
 
 var file = new File(
   [pdfBytes],
@@ -598,10 +598,10 @@ var file = new File(
     type: "application/pdf;charset=utf-8",
   }
 );
-// saveAs(file);
+saveAs(file);
 };
 
-generatePDFDigitalPoster("Jitendra Kumar Verma");
+// generatePDFDigitalPoster("Jitendra Kumar Verma");
 // generatePDF("Shashwat Shrivastav");
 // generatePDF("Mariyam Fatima Rizvi");
 // generatePDF("Abhishek kumar pandey");
