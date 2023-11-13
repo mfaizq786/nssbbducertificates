@@ -206,6 +206,10 @@ var speechName = [
 "Yazdaan Butool"
 ];
 
+// Digital Poster Making
+
+
+
 //function for blood
 const inputValBlood = document.querySelector("#name-b");
 const submit_btn_b = document.querySelector("#submit-b");
@@ -445,6 +449,88 @@ console.log("Done creating");
 var file = new File(
   [pdfBytes],
   "NSS Speech Comp Certificate.pdf",
+  {
+    type: "application/pdf;charset=utf-8",
+  }
+);
+saveAs(file);
+};
+
+
+// function for Digital Poster Making Competition
+
+const submit_btn_dp = document.querySelector("#submit-dp");
+const inputValDigitalPoster = document.querySelector("#name-dp");
+submit_btn_dp.addEventListener("click",()=>{
+  let val = inputValDigitalPoster.value;
+  let indexNum = prompt("Enter Your Index Num: ");
+    let isValid = false;   
+    for(let i=0; i<digitalPoster.length; i++){
+      if(digitalPoster[i] == indexNum && digitalPosterName[i].toLowerCase() == val.toLowerCase()){
+        isValid = true;
+        break;
+      }        
+    }
+    if(isValid == false){
+      alert("You are not a valid person..");
+    }else{
+      generatePDFDigitalPoster(val);
+      alert(val+" , your speech competition certificate is generated successfully...");
+    }
+});
+
+const generatePDFDigitalPoster = async (name) =>{ 
+  const {PDFDocument, StandardFonts, rgb} = PDFLib;
+  name = name.toUpperCase();
+
+  const exBytes = await fetch("./Speech_comp.pdf").then((res) =>{
+      return res.arrayBuffer();
+  });
+
+  const pdfDoc = await PDFDocument.load(exBytes);
+  const timesRomanFont = await pdfDoc.embedFont(StandardFonts.TimesRoman);
+  
+  // Get the first page of the document
+  const pages = pdfDoc.getPages();
+  const firstPage = pages[0];
+
+  
+  // Draw a string of text diagonally across the first page 
+  
+  // xPos ---> line se pahle ki 
+  // line ki width 19 charachters
+  // 1 character --- 15px 
+  let xPos = 170;
+  let nameLenth = name.length;
+  let offset = (490 - nameLenth*15)/2;
+  firstPage.drawText(name, {
+  x: xPos + offset,
+  y: 240,
+  size:25,
+  // color: rgb(0, 0.53, 0.71),
+  // color: rgb(0, 0, 0),
+  font:timesRomanFont,
+  // color: rgb(250, 250, 250),
+});
+
+const uri = await pdfDoc.saveAsBase64({dataUri:true});
+// document.querySelector("#mypdf").src = uri;
+
+  // const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
+  // document.getElementById("mypdf").src = pdfDataUri;
+
+  // Serialize the PDFDocument to bytes (a Uint8Array)
+const pdfBytes = await pdfDoc.save();
+console.log("Done creating");
+
+// this was for creating uri and showing in iframe
+
+// const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
+// document.getElementById("pdf").src = pdfDataUri;
+
+var file = new File(
+  [pdfBytes],
+  "NSS Digital Poster Comp Certificate.pdf",
   {
     type: "application/pdf;charset=utf-8",
   }
