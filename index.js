@@ -136,7 +136,7 @@ var posterName =[
 "Sumi Gaur",
 "Tanu Tiwari",
 "Vaishnavi Agarwal", 
-"Yahika singh tomar",
+"Yashika singh tomar",
 "Shubham Tripathi",
 "Mohd Adnan",
 "Ali Ahmad",
